@@ -191,3 +191,86 @@ function loadItem5() {
 }
 
 loadItem5();
+
+//change the time block colors
+function timeBlock9() {
+  if (timeRn > 9) {
+    $("#textArea9").addClass("past");
+  } else if (timeRn === 9) {
+    $("#textArea9").addClass("present");
+  } else if (timeRn < 9) $("#textArea9").addClass("future");
+}
+timeBlock9();
+
+function timeBlock10() {
+  if (timeRn > 10) {
+    $("#textArea10").addClass("past");
+  } else if (timeRn === 10) {
+    $("#textArea10").addClass("present");
+  } else if (timeRn < 10) $("#textArea10").addClass("future");
+}
+timeBlock10();
+
+function timeBlock11() {
+  if (timeRn > 11) {
+    $("#textArea11").addClass("past");
+  } else if (timeRn === 11) {
+    $("#textArea11").addClass("present");
+  } else if (timeRn < 11) $("#textArea11").addClass("future");
+}
+timeBlock11();
+
+function timeBlock12() {
+  if (timeRn > 12) {
+    $("#textArea12").addClass("past");
+  } else if (timeRn === 12) {
+    $("#textArea12").addClass("present");
+  } else if (timeRn < 12) $("#textArea12").addClass("future");
+}
+timeBlock12();
+
+function timeBlock1() {
+  if (timeRn > 13) {
+    $("#textArea1").addClass("past");
+  } else if (timeRn === 13) {
+    $("#textArea1").addClass("present");
+  } else if (timeRn < 13) $("#textArea1").addClass("future");
+}
+timeBlock1();
+
+function timeBlock2() {
+  if (timeRn > 14) {
+    $("#textArea2").addClass("past");
+  } else if (timeRn === 14) {
+    $("#textArea2").addClass("present");
+  } else if (timeRn < 14) $("#textArea2").addClass("future");
+}
+timeBlock2();
+
+function timeBlock3() {
+  if (timeRn > 15) {
+    $("#textArea3").addClass("past");
+  } else if (timeRn === 15) {
+    $("#textArea3").addClass("present");
+  } else if (timeRn < 15) $("#textArea3").addClass("future");
+}
+timeBlock3();
+
+function timeBlock4() {
+  if (timeRn > 16) {
+    $("#textArea4").addClass("past");
+  } else if (timeRn === 16) {
+    $("#textArea4").addClass("present");
+  } else if (timeRn < 16) $("#textArea4").addClass("future");
+}
+timeBlock4();
+
+function timeBlock5() {
+  if (timeRn > 17) {
+    $("#textArea5").addClass("past");
+  } else if (timeRn === 17) {
+    $("#textArea5").addClass("present");
+  } else if (timeRn < 17) $("#textArea5").addClass("future");
+}
+timeBlock5();
+// END TIME BLOCK COLORS
