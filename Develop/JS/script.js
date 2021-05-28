@@ -21,7 +21,7 @@ var timeRn = new Date().getHours();
 console.log(timeRn);
 
 // save 9am to local storage
-save9.addEventListener("click", function () {
+save9.addEventListener("click", function nineAm() {
   var userTxt = document.querySelector("#textArea9").value;
 
   if (userTxt === "") {
@@ -33,7 +33,7 @@ save9.addEventListener("click", function () {
 });
 
 //save 10am to local storage
-save10.addEventListener("click", function () {
+save10.addEventListener("click", function tenAm() {
   var userTxt = document.querySelector("#textArea10").value;
 
   if (userTxt === "") {
@@ -45,7 +45,7 @@ save10.addEventListener("click", function () {
 });
 
 // save 11am to local storage
-save11.addEventListener("click", function () {
+save11.addEventListener("click", function elevenAm() {
   var userTxt = document.querySelector("#textArea11").value;
 
   if (userTxt === "") {
@@ -57,7 +57,7 @@ save11.addEventListener("click", function () {
 });
 
 //save 12pm to local storage
-save12.addEventListener("click", function () {
+save12.addEventListener("click", function twelvePm() {
   var userTxt = document.querySelector("#textArea12").value;
 
   if (userTxt === "") {
@@ -69,7 +69,7 @@ save12.addEventListener("click", function () {
 });
 
 // save 1pm to local storage
-save1.addEventListener("click", function () {
+save1.addEventListener("click", function onePm() {
   var userTxt = document.querySelector("#textArea1").value;
 
   if (userTxt === "") {
@@ -81,7 +81,7 @@ save1.addEventListener("click", function () {
 });
 
 //save 2pm to local storage
-save2.addEventListener("click", function () {
+save2.addEventListener("click", function twoPm() {
   var userTxt = document.querySelector("#textArea2").value;
 
   if (userTxt === "") {
@@ -93,7 +93,7 @@ save2.addEventListener("click", function () {
 });
 
 //save 3pm to local storage
-save3.addEventListener("click", function () {
+save3.addEventListener("click", function threePm() {
   var userTxt = document.querySelector("#textArea3").value;
 
   if (userTxt === "") {
@@ -105,7 +105,7 @@ save3.addEventListener("click", function () {
 });
 
 //save 4pm to local storage
-save4.addEventListener("click", function () {
+save4.addEventListener("click", function fourPm() {
   var userTxt = document.querySelector("#textArea4").value;
 
   if (userTxt === "") {
@@ -117,7 +117,7 @@ save4.addEventListener("click", function () {
 });
 
 //save 5pm to local storage
-save5.addEventListener("click", function () {
+save5.addEventListener("click", function fivePm() {
   var userTxt = document.querySelector("#textArea5").value;
 
   if (userTxt === "") {
@@ -127,3 +127,67 @@ save5.addEventListener("click", function () {
     localStorage.setItem("textArea5", userTxt);
   }
 });
+
+// saves user input to the text area when the page refreshes
+function loadItem9() {
+  var ta9 = document.querySelector("#textArea9");
+  ta9.value = localStorage.getItem("textArea9");
+}
+
+loadItem9();
+
+function loadItem10() {
+  var ta10 = document.querySelector("#textArea10");
+  ta10.value = localStorage.getItem("textArea10");
+}
+
+loadItem10();
+
+function loadItem11() {
+  var ta11 = document.querySelector("#textArea11");
+  ta11.value = localStorage.getItem("textArea11");
+}
+
+loadItem11();
+
+function loadItem12() {
+  var ta12 = document.querySelector("#textArea12");
+  ta12.value = localStorage.getItem("textArea12");
+}
+
+loadItem12();
+
+function loadItem1() {
+  var ta1 = document.querySelector("#textArea1");
+  ta1.value = localStorage.getItem("textArea1");
+}
+
+loadItem1();
+
+function loadItem2() {
+  var ta2 = document.querySelector("#textArea2");
+  ta2.value = localStorage.getItem("textArea2");
+}
+
+loadItem2();
+
+function loadItem3() {
+  var ta3 = document.querySelector("#textArea3");
+  ta3.value = localStorage.getItem("textArea3");
+}
+
+loadItem3();
+
+function loadItem4() {
+  var ta4 = document.querySelector("#textArea4");
+  ta4.value = localStorage.getItem("textArea4");
+}
+
+loadItem4();
+
+function loadItem5() {
+  var ta5 = document.querySelector("#textArea5");
+  ta5.value = localStorage.getItem("textArea5");
+}
+
+loadItem5();
